@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema PessoaWeb</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: rgba(0,0,0,0.4);
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h1 {
+            font-size: 22px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            margin-left: 20px;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .menu a:hover {
+            background-color: white;
+            color: #1e3c72;
+        }
+
+        /* Conteúdo principal */
+        .main {
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .main h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .main p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        /* Iframe */
+        iframe {
+            margin-top: 40px;
+            width: 90%;
+            height: 500px;
+            border-radius: 10px;
+            border: none;
+            background: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <h1>👨‍💻 PessoaWeb</h1>
+
+        <div class="menu">
+            <a href="cadastrarpessoa.jsp" target="janela_prog">Cadastrar</a>
+            <a href="consultarpessoa.jsp" target="janela_prog">Consultar</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <h2>Sistema de Controle de Pessoas</h2>
+        <p>Gerencie cadastros de forma simples e eficiente.</p>
+
+        <iframe name="janela_prog"></iframe>
+    </div>
+
+</body>
+</html>
